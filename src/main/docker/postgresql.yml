@@ -1,0 +1,12 @@
+version: '2'
+services:
+  consumptionapionly-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/ConsumptionAPIOnly/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=ConsumptionAPIOnly
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
